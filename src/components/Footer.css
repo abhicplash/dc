@@ -1,3 +1,11 @@
+.footer {
+  width: 100%;
+  /* min-height: 100vh; */
+  background: url("../assets/footerherodesk.svg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 3rem;
+}
 .footer-main {
   width: 100%;
   display: flex;
@@ -12,6 +20,8 @@
 }
 .footer-desc-exact {
   text-align: right;
+  font-size: 0.8rem;
+  font-weight: 300;
 }
 .footer-divide {
   width: 90%;
@@ -131,13 +141,21 @@
 .footer-copyright {
   font-size: 10px;
 }
+.Footer-Logo {
+  width: 10rem;
+}
 @media (max-width: 768px) {
+  .footer{
+    background: url("../assets/footerheromob.svg");
+    background-size: cover;
+  }
   .footer-left {
     flex-direction: column;
     width: 85%;
   }
   .footer-desc-exact {
     text-align: left;
+    margin-top: 0.5rem;
   }
   .footer-divide {
     width: 85%;

@@ -1,0 +1,35 @@
+.hero-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url("../assets/bgherodesk.svg");
+  position: relative;
+}
+.hero-overlay {
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  background: url("../assets/Herobg.jpg");
+  opacity: 5%;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-title {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 140%;
+  /* height: 64px; */
+}
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 26px;
+  }
+  .hero-wrapper {
+    background: url("../assets/bgheromob.svg");
+  }
+}
