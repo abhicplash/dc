@@ -1,11 +1,14 @@
 .features-section {
   width: 100%;
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 3rem 0;
-  background: url("../assets/bgfeaturedesk.svg");
+  background: url("../assets/bgteam.svg");
+  background-position: center;
+  background-size: cover;
 }
 
 .features-title {
@@ -281,11 +284,12 @@
 }
 
 .investor-cta-btn:hover {
-  background: #159c3f;cursor: pointer;
+  background: #159c3f;
+  cursor: pointer;
 }
 
 /* Responsive */
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .roadmap-section,
   .investor-section {
     width: 98%;
@@ -293,7 +297,7 @@
   .investor-benefits-cards {
     gap: 1rem;
   }
-}
+} */
 
 @media (max-width: 768px) {
   .roadmap-section,
