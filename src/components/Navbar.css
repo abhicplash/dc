@@ -57,7 +57,7 @@
 .desk-list-navigation {
   text-decoration: none;
   color: #fff;
-  font-weight: 500;
+  font-weight: 200;font-size: 0.85rem;
 }
 @media (max-width: 768px) {
   .nav-icon {
