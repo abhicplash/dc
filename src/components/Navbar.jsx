@@ -9,14 +9,15 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import logo from "../assets/Logo.png";
 
 const Navbar = () => {
   const [view, setView] = useState(false);
- 
 
   return (
     <nav className="navbar">
-      <h2>Datcarts</h2>
+      {/* <h2>Datcarts</h2> */}
+      <img src={logo} alt="Datcarts Logo" className="navLogo" />
       <div className="nav-icon" onClick={() => setView(!view)}>
         <FaBars />
       </div>
@@ -57,18 +58,18 @@ const Navbar = () => {
         </ul>
       ) : null}
       <ul className="list-desk">
-         <Link to="/" className="desk-list-navigation">
-            <li>Home</li>
-          </Link>
-          <Link to="/about" className="desk-list-navigation">
-            <li>About Us</li>
-          </Link>
-          <Link to="/legal" className="desk-list-navigation">
-            <li>Legal Privacy</li>
-          </Link>
-          <Link to="/contact" className="desk-list-navigation">
-            <li>Contact Us</li>
-          </Link>
+        <Link to="/" className="desk-list-navigation">
+          <li>Home</li>
+        </Link>
+        <Link to="/about" className="desk-list-navigation">
+          <li>About Us</li>
+        </Link>
+        <Link to="/legal" className="desk-list-navigation">
+          <li>Legal Privacy</li>
+        </Link>
+        <Link to="/contact" className="desk-list-navigation">
+          <li>Contact Us</li>
+        </Link>
       </ul>
     </nav>
   );
