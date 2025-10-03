@@ -85,11 +85,17 @@
 
 // export default Features;
 
-
 import React from "react";
 import "./Features.css";
 import { FaChartBar, FaCogs, FaStream, FaChartPie } from "react-icons/fa";
-import { FaFlagCheckered, FaChartLine, FaMapMarkedAlt, FaTrophy, FaUndo, FaDollarSign } from "react-icons/fa";
+import {
+  FaFlagCheckered,
+  FaChartLine,
+  FaMapMarkedAlt,
+  FaTrophy,
+  FaUndo,
+  FaDollarSign,
+} from "react-icons/fa";
 
 const features = [
   {
@@ -155,7 +161,10 @@ const Features = () => (
     <h3 className="features-title">INVEST IN THE FUTURE OF</h3>
     <h2 className="features-highlight">IN-STORE ENGAGEMENT</h2>
     <p className="features-desc">
-      DATCARTS is revolutionizing in-store retail advertising with our innovative smart shopping cart technology. Join us in transforming the shopping experience and capturing a significant share of the $20 billion in-store advertising market.
+      DATCARTS is revolutionizing in-store retail advertising with our
+      innovative smart shopping cart technology. Join us in transforming the
+      shopping experience and capturing a significant share of the $20 billion
+      in-store advertising market.
     </p>
     <div className="features-cards">
       {features.map((f, idx) => (
@@ -170,7 +179,8 @@ const Features = () => (
     {/* Growth Roadmap */}
     <div className="roadmap-section">
       <h3 className="roadmap-title">GROWTH ROADMAP</h3>
-      {/* <div className="roadmap-list">
+      <div className="feature-divide"></div>
+      <div className="roadmap-list">
         {roadmap.map((item, idx) => (
           <div className="roadmap-item" key={idx}>
             <div className="roadmap-icon">{item.icon}</div>
@@ -180,15 +190,16 @@ const Features = () => (
             </div>
           </div>
         ))}
-      </div> */}
+      </div>
     </div>
 
     {/* Investor Benefits */}
-    {/* <div className="investor-section">
+    <div className="investor-section">
       <div className="investor-title">Investor Benefits</div>
       <div className="investor-subtitle">Exclusive Opportunities</div>
       <div className="investor-desc">
-        Investing in DATCARTS offers unique advantages, including early access to a disruptive technology and the potential for substantial returns.
+        Investing in DATCARTS offers unique advantages, including early access
+        to a disruptive technology and the potential for substantial returns.
       </div>
       <div className="investor-benefits-cards">
         {investorBenefits.map((item, idx) => (
@@ -201,12 +212,16 @@ const Features = () => (
           </div>
         ))}
       </div>
+    </div>
+    <div className="investor-sub-section">
       <div className="investor-cta-title">Ready to Invest?</div>
       <div className="investor-cta-desc">
-        Join us in shaping the future of in-store advertising. Contact us today to learn more about investment opportunities and how you can be a part of the DATCARTS success story.
+        Join us in shaping the future of in-store advertising. Contact us today
+        to learn more about investment opportunities and how you can be a part
+        of the DATCARTS success story.
       </div>
       <button className="investor-cta-btn">Explore Investment Opportunities</button>
-    </div> */}
+    </div>
   </section>
 );
 
